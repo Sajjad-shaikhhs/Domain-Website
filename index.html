@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Domain Website</title>
+</head>
+<style>
+   
+    .container1{
+        height: 100dvh;
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        margin: -48px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    .navbar{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .navbarclr{
+        width: 100%;
+        height: 9dvh;
+        background-color: black;
+        /* opacity: 1; */
+        
+    }
+    img{
+        height: 10dvh;
+        width: 15%;
+    }
+    .signin{
+        float: right;
+        color: white;
+        position: relative;
+        top:55%;
+        right: 4%;
+    }
+    /* #signinimg{
+        height: 1%;
+    width: 8%;
+    float: right;
+    position: relative;
+    top: 21.5px;
+    right: -122px;
+    } */
+     /* nav img{
+        height: 40%;
+        width: 10%;
+     } */
+    .backgroundimg{
+        height: 95dvh;
+        width: 98.9%;
+        position: absolute;
+        top: 10%;
+        left: 9px;
+        background-image: url(background\ img.avif) ;
+        background-repeat: no-repeat;
+        background-size: 150%;
+    }
+    .name{
+        color: white;
+        font-size: 27px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 8%;
+        text-indent: -13%;
+    }
+    .price{
+        color: white;
+        font-size: 23px;
+        /* align-items: center;
+        justify-content: center;
+        display: flex; */
+        margin-left: 34%;
+        margin-top: -18px;
+        word-spacing: 4px;
+    }
+    .search input{
+        width: 39%;
+        height: 6dvh;
+        margin-left: 26%;
+        margin-top: 26px;
+    }
+    .search img{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 342px;
+        left: 839px;
+    }
+    .backgroundimg p{
+        color: white;
+        margin-left: 470px;
+        font-size: 17px;
+
+    }
+    .products{
+        /* display: flex; */
+        color: white;
+        justify-content: space-evenly;
+        flex-direction: row;
+        position: absolute;
+        top: 75%;
+    }
+    .products ul li{
+        color: white;
+        font-weight: 1000;
+        font-size: 38px;
+        /* display: horizontal row; */
+        margin: 60px;
+        margin-left: 80px;
+        list-style-type: none;
+
+    }
+    .products ul{
+        color: black;
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    #redot{
+        color: red;
+        font-size: 50px;
+    }
+    .products .price{
+        position: relative;
+        top: 44%;
+        left: -39px;
+        font-size: 17px;
+    }
+    .boxpage{
+        height: 206dvh;
+        width: 100%;
+        /* background-color: rgb(223, 179, 122); */
+        margin-top: -22px;
+    }
+    .boxpage #secondpara{
+        position: relative;
+        top: 8%;
+        /* left: 30%; */
+    }
+    .boxpage #onepara{
+        font-weight: bold;
+        font-size: 40px;
+        position: relative;
+        top: 10%;
+        /* left: 30%; */
+    }
+    .boxpage p{
+        display: flex;
+        justify-content: center;
+    }
+    .boxes{
+        display: flex;
+        height: 85dvh;
+        width: 100%;
+        /* background-color: black; */
+        margin-top: 8%;
+        justify-content: space-evenly;
+        color: white;
+        /* justify-content: center; */
+        font-size: 20px;
+    }
+    .box1{
+        background-color: green;
+        height: 75dvh;
+        width: 25%;
+
+        
+    }
+    .box2{
+         background-color: blue;
+         height: 75dvh;
+         width: 25%;
+    }
+    .box3{
+          background-color: palevioletred;
+          height: 75dvh;
+          width: 25%;
+    }
+    .boxes2{
+        display: flex;
+        height: 85dvh;
+        width: 100%;
+        color: white;
+        /* background-color: rgb(255, 0, 0); */
+        /* margin-top: ; */
+        /* padding: 5%; */
+        justify-content: space-evenly;
+        font-size: 20px;
+    }
+    .box4{
+        background-color: skyblue;
+        height: 75dvh;
+          width: 25%;
+    }
+    .box5{
+        background-color: chocolate;
+        height: 75dvh;
+          width: 25%;
+    }
+    .box6{
+        background-color: purple;
+        height: 75dvh;
+          width: 25%;
+    }
+
+    #vpslogo, #weblogo, #hoslogo,#woocommercelogo, #wordpresslogo, #sharelogo{
+        position: relative;
+        top: 6%;
+        right: 14%;
+        font-size: 170%;
+        float: right;
+    }
+    .box1 h1, .box2 h1, .box3 h1{
+        position: relative;
+        top: 40px;
+        left: 25px;
+    }
+    .box4 h1, .box5 h1, .box6 h1{
+        position: relative;
+        top: 40px;
+        left: 25px;
+    }
+    .box1 p, .box2 p, .box3 p{
+        position: relative;
+        top: 60px;
+        left: 5px;
+        text-align: left;
+    }
+    .box4 p, .box5 p, .box6 p{
+        position: relative;
+    top: 60px;
+    /* left: 3px; */
+    margin-left: 39px;
+    margin-right: 23px;
+    text-align: left;
+    }
+    .box1 .startsat, .box2 .startsat, .box3 .startsat{
+        position: relative;
+        top: 90px;
+        left: 25px;
+        font-size: 19px;
+    }
+    .box4 .startsat, .box5 .startsat, .box6 .startsat{
+        position: relative;
+        top: 90px;
+        left: 25px;
+        font-size: 19px;
+    }
+    .box1 .price, .box2 .price, .box3 .price{
+        position: relative;
+        top: 120px;
+        left: -87px;
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    .box4 .price, .box5 .price, .box6 .price{
+        position: relative;
+        top: 120px;
+        left: -87px;
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    .boxes .fa-angle-right{
+        height: 32px;
+    width: 36px;
+    background-color: silver;
+    color: black;
+    float: right;
+    margin-top: 53%;
+    text-align: center;
+    font-size: 185%;
+    }
+    .box4 .fa-angle-right{
+        height: 32px;
+    width: 36px;
+    background-color: silver;
+    color: black;
+    float: right;
+    margin-top: 53%;
+    text-align: center;
+    font-size: 185%;
+    }
+    .box5 .fa-angle-right{  height: 32px;
+    width: 36px;
+    background-color: silver;
+    color: black;
+    float: right;
+    margin-top: 46%;
+    text-align: center;
+    font-size: 185%;
+}
+    .box6 .fa-angle-right{  height: 32px;
+    width: 36px;
+    background-color: silver;
+    color: black;
+    float: right;
+    margin-top: 46%;
+    text-align: center;
+    font-size: 185%;
+}
+    .container{
+        height: 90dvh;
+        width: 100%;
+        background-color: aliceblue;
+        border: 1px solid;
+
+    }
+    .firstside{
+        width: 48%;
+        height: 90dvh;
+        /* border: 1px solid red; */
+        float: left;
+
+    }
+    .secondside{
+        width: 48%;
+        height: 90dvh;
+        /* border: 1px solid red; */
+        float: right;
+
+    }
+    .explore{
+        color: red;
+        font-size: large;
+        position: relative;
+        top: 13% ;
+        left: 14%;
+    }
+    .features{
+        font-size: 40px;
+        font-weight: bolder;
+        position: relative;
+        top: 18%;
+        left: 14%;
+
+    }
+    .firstside p{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin-left: 85px;
+    margin-right: 184px;
+    margin-top: 117px;
+    }
+    .firstside img{
+        height: 15%;
+    width: 12%;
+    border-radius: 50px;
+    position: relative;
+    top: 9%;
+    left: 22%;
+    }
+    h4{
+        height: 9%;
+        width: 40%;
+        border: 2px solid red;
+        color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 13%;
+        margin-top: 8%;
+    }
+    h4 a{
+        color: red;
+    }
+    #firstrow{
+        height: 48%;
+        /* border: 3px solid black; */
+        /* background-color: black; */
+    }
+    #secondrow{
+        height: 48%;
+        /* border: 3px solid rgb(243, 16, 16); */
+
+    }
+    .guarantee{
+        font-size: 23px;
+    font-weight: bold;
+    margin-top: 109px;
+    margin-left: 61px;
+    }
+    #firstrow p{
+        margin-left: 61px;
+    }
+    #firstrow img:nth-child(1) {
+        height: 11%;
+    width: 7%;
+    position: relative;
+    top: 35%;
+    left: 10%;
+    }
+    #firstrow img:nth-child(2) {
+        height: 11%;
+    width: 7%;
+    position: relative;
+    top: 126%;
+    left: 2%;
+    }
+    .unmeter{
+        font-size: 23px;
+    font-weight: bold;
+    margin-top: -137px;
+    margin-left: 399px;
+}
+#firstrow section{
+    margin-left: 400px;
+    margin-top: 2.7%;
+}
+.storage{
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 14%;
+    margin-left: 61px;
+}
+#secondrow img:nth-child(1){
+    height: 11%;
+    width: 7%;
+    position: relative;
+    top: -63%;
+    left: 62%;
+}
+#secondrow img:nth-child(2){
+    height: 11%;
+    width: 7%;
+    position: relative;
+    top: 25%;
+    left: 55%;
+}
+.install img{
+    height: 11%;
+    width: 7%;
+    position: relative;
+    top: 28%;
+    left: 11%;
+
+}
+#secondrow p{
+    margin-left: 61px;
+
+}
+.install{
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: -22%;
+    margin-left: 400px;
+}
+#secondrow section{
+    margin-left: 400px;
+    margin-top: 2.7%;
+
+}
+.timersection{
+    height: 63dvh;
+    width: 100%;
+    background-color: orangered;
+    margin-top: 7%;
+}
+.signup{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    top: 20%;
+    left: 11%;
+
+}
+.sale{
+    color: white;
+    /* font-size: 40px; */
+    /* font-weight: bold; */
+    position: relative;
+    top: 24%;
+    left: 11%;
+
+}
+.timersection p{
+  text-align: left;
+  font-size: 30px;
+  margin-left: 11%;
+  margin-top: 10%;
+  word-spacing: 30px;
+  color: white;
+}
+.days, .hours, .mints, .sec{
+    font-size: 15px;
+    color: white;
+}
+.days{
+    position: relative;
+    top: -18px;
+    left: 150px;
+}
+.hours{
+   
+    position: relative;
+    top: -35px;
+    left: 226px;
+}
+.mints{
+    position: relative;
+    top: -51px;
+    left: 299px;
+}
+.sec{
+    position: relative;
+    top: -67px;
+    left: 383px;
+}
+.saleprice{
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: -262px;
+    left: 80%;
+}
+.valid{
+    font-size: 21px;
+    color: white;
+    position: relative;
+    top: -71%;
+    left: 87%;
+
+}
+.timersection button{
+    height: 10%;
+    width: 11%;
+    /* border: 1px solid black; */
+    background-color: rgb(218, 143, 30);
+    position: relative;
+    top: -62%;
+    left: 80%;
+    color: white;
+    cursor: pointer;
+}
+.gridcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    margin-top: 11%;
+}
+.gridcontainer > div{
+    border: 2px solid black;
+    border-radius: 9px;
+    
+}
+.gridcontainer > div:hover{
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+
+.gridcontainer h2{
+    padding-left: 65px;
+    padding-top: 42PX;
+    font-weight: bold;
+}
+.gridcontainer .off{
+    font-size: 25px;
+    color: red;
+    padding-left: 65px;
+    word-spacing: 3px;
+
+}
+.gridcontainer #price{
+    font-size: 45px;
+    font-weight: bold;
+    padding-left: 65px;
+    margin-top: 35px;
+}
+.yearly{
+    margin-left: 15%;
+    font-size: small;
+}
+.submenu{
+    display: none;
+    background-color: black;
+
+}
+.submenu li{
+    color: black;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown:hover .submenu{
+    display: block;
+    position: absolute;
+}
+.pricing{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    position: relative;
+    top: 67px;
+}
+.plans{
+    color: red;
+    position: relative;
+    top: 67px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.fa-angle-down{
+    float: right;
+}
+.allfeatures{
+    font-size: 16px;
+    padding-left: 35px;
+}
+.submenu{
+    display: none;
+
+}
+.allfeatures:hover .submenu{
+    display: block;
+    background-color: black;
+}
+.selection{
+    height: 6dvh;
+    width: 55%;
+    border: 1px solid black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20%;
+    margin-left: 20%;
+    border-radius: 5px;
+
+    /* position: relative; */
+    /* top: 20%; */
+    /* padding-left: 4px; */
+    /* padding-top: 0%; */
+}
+.selection a{
+    color: black;
+}
+.selection:hover{
+    background-color: red;
+    a{
+        color: white;
+    }
+}
+.clients{
+     color: red;
+     display: flex;
+     justify-content: center;
+     margin-top: 14%;
+
+}
+.qualityclients{
+     display: flex;
+     justify-content: center;
+     margin-top: 2%;
+     font-size: 30px;
+     font-weight: bold;
+
+}
+.reviews{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 40dvh;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2%;
+    gap: 20px;
+}
+.secondreview img{
+    height: 14%;
+    width: 8%;
+    border-radius: 63%;
+    position: relative;
+    left: 78px;
+    top: -30px;
+}
+.firstreview img{
+    height: 15%;
+    width: 8%;
+    border-radius: 63%;
+    position: relative;
+    left: 65px;
+    top: 50px;
+}
+.firstreview, .secondreview{
+border: 2px solid rgb(206, 206, 206);
+}
+.firstreview .name{
+    font-size: 25px;
+    color: black;
+    margin-left: -30%;
+    margin-top: 2%;
+}
+.firstreview .profession{
+     font-size: 15px;
+     margin-left: 22%;
+}
+.secondreview .name{
+    font-size: 25px;
+    color: black;
+    margin-left: -12%;
+    margin-top: 10%;
+}
+.secondreview .profession{
+    font-size: 15px;
+    margin-left: 24%;
+    margin-top: -6%;
+}
+
+.reviews p{
+    margin-left: 105px;
+    margin-right: 106px;
+    margin-top: 7%;
+
+}
+.needhelp{
+       height: 10dvh;
+       width: 100%;
+       background-color: orangered;
+       color: white;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 10%;
+       font-size: 25px;
+}
+.contactdetails{
+       height: 69dvh;
+       width: 100%;
+       background-color: black;
+       display: grid;
+       grid-template-columns: auto auto auto auto auto;
+}
+.column1, .column2, .column3, .column4, .column5{
+/* border: 1px solid white; */
+color: rgb(252, 252, 252);
+}
+.contactdetails h2{
+/* margin-top: 23%;
+margin-left: 21%; */
+text-align: center;
+}
+.column1 ul li{
+list-style: none;
+margin-top: 8%;
+margin-left: 14%;
+}
+.column2 ul li{
+list-style: none;
+margin-top: 8%;
+margin-left: 31%;
+}
+.column3 ul li{
+list-style: none;
+margin-top: 8%;
+margin-left: 21%;
+}
+.column4 ul li{
+list-style: none;
+margin-top: 8%;
+margin-left: 16%;
+}
+.column5 ul li{
+list-style: none;
+margin-top: 8%;
+margin-left: 22%;
+}
+a:hover{
+    text-decoration: underline;
+}
+.footer a{
+    color: rgb(204, 200, 200);
+}
+.footerimage{
+    height: 20%;
+    width: 350%;
+    margin-top: 19%;
+
+}
+.rights{
+    color: white;
+    margin-top: 19%;
+    position: relative;
+    left: 80%;
+}
+.fa-facebook{
+    font-size: 20px;
+    padding: 1px;
+    margin-top: 25%;
+    position: relative;
+    left: 170%;
+    text-decoration: none;
+    
+}
+.fa-instagram{
+    font-size: 20px;
+    padding: 1px;
+    margin-top: 25%;
+    position: relative;
+    left: 175%;
+    text-decoration: none;
+    
+}
+.fa-twitter{
+    font-size: 20px;
+    padding: 1px;
+    margin-top: 25%;
+    position: relative;
+    left: 180%;
+    text-decoration: none;
+    
+}
+.fa-whatsapp{
+    font-size: 20px;
+    padding: 1px;
+    margin-top: 25%;
+    position: relative;
+    left: 185%;
+    text-decoration: none;
+
+}
+.usd{
+    color: white;
+    margin-left: 226%;
+    position: relative;
+    top: -15%;
+    font-weight: bold;
+}
+#dropdown{
+    position: relative;
+    top: -15%;
+    left: 145%;
+}
+
+
+    
+
+</style>
+<body>
+    <div class="container1">
+
+
+    <div class="navbarclr">
+        <div class="logo">
+            <img src="gexhost logo.png" alt="">
+        </div>
+    <div class="navbar">
+    <nav>
+            <a href=""><span>Domains</span></a>
+            <a href=""><span>Hostings</span></a>
+            <a href=""><span>Pricing</span></a>
+            <a href=""><span>Supporting</span></a>
+        </div>
+        <div class="signin">
+            <a href=""><span>Sign In</span></a>
+        </div>
+        <!-- <img src="data:image/jpeg;base64,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" alt=""> -->
+       
+    </nav>
+    </div>
+
+
+    <div class="backgroundimg">
+
+        <div class="name">
+            <h1>Find your perfect <br> domain name</h1> 
+        </div>
+            <div class="price">
+                Grab a <b>.com</b> starting at $12.95/yr*
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Find your perfect domain...">
+                <img src="data:image/jpeg;base64,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" alt="">
+
+            </div>
+
+            <p>Already have a domain? <b>Transfer it to us -></b></p>
+
+    </div>
+
+    <div class="products">
+    <ul>
+        <li> <span id="redot">.</span>com  <br> <p class="price">$12.95/yr</p></li>
+        <li><span id="redot">.</span>co <br><p class="price">$12.95/yr</p></li>
+        <li><span id="redot">.</span>org <br><p class="price">$12.95/yr</p></li>
+        <li><span id="redot">.</span>net <br><p class="price">$12.95/yr</p></li>
+        <li><span id="redot">.</span>info <br><p class="price">$12.95/yr</p></li>
+        <li><span id="redot">.</span>pk <br><p class="price">$12.95/yr</p></li>
+    </ul>
+    </div>
+    </div>
+
+    <div class="boxpage">
+        <p id="onepara">One Platform. Multiple Hosting</p>
+        <p id="secondpara">Pick your perfect web hosting plan. We got 'em all</p>
+
+        <div class="boxes">
+            <div class="box1">
+                <a href="" class="fa fa-share-alt" id="sharelogo"></a>
+                <h1>Shared <br> Hosting</h1>
+                <p>Easy, affordable, and includes <br> a free domain for a year.</p>
+                <div class="startsat">Starts at</div>
+                <div class="price">$2.75/mo*</div>
+                <a href="" class="fa fa-angle-right"></a>
+
+            </div>
+            <div class="box2">
+                <a href="" class="fa fa-wordpress" id="wordpresslogo"></a>
+                <h1>WordPress <br> Hosting</h1>
+                <p>2.5x the speed, beefed up security, <br> and free migrations.</p>
+                <div class="startsat">Starts at</div>
+                <div class="price">$5.75/mo*</div>
+                <a href="" class="fa fa-angle-right"></a>
+
+            </div>
+            <div class="box3">
+                <a href="" class="fa fa-shopping-cart" id="woocommercelogo"></a>
+                <h1>WooCommerce <br> Hosting</h1>
+                <p>2.5x the speed, beefed up security, <br> and free migrations.</p>
+                <div class="startsat">Starts at</div>
+                <div class="price">$6.98/mo*</div>
+                <a href="" class="fa fa-angle-right"></a>
+
+            </div>
+
+        </div>
+
+
+            <div class="boxes2">
+                <div class="box4">
+                    <a href="" class="fa fa-cloud" id="vpslogo"></a>
+                    <h1>VPS <br> Hosting </h1>
+                    <p>Full root access in a fully scalable hosting environment.</p>
+                <div class="startsat">Starts at</div>
+                <div class="price">$9.56/mo*</div>
+                <a href="" class="fa fa-angle-right"></a>
+
+                </div>
+                <div class="box5">
+                    <a href="" class="fa fa-server" id="hoslogo"></a>
+                    <h1>Dedicated <br> Hosting</h1>
+                    <p>2.5x the speed, beefed up security, <br> and free migrations.</p>
+                <div class="startsat">Starts at</div>
+                <div class="price">$2.75/mo*</div>
+                <a href="" class="fa fa-angle-right"></a>
+
+                </div>
+                <div class="box6">
+                    <a href="" class="fa fa-globe" id="weblogo"></a>
+                    <h1>Website <br> Builder</h1>
+                    <p>2.5x the speed, beefed up security, <br> and free migrations.</p>
+                <div class="startsat">Starts at</div>
+                <div class="price">$5.75/mo*</div>
+                <a href="" class="fa fa-angle-right"></a>
+
+                </div>
+
+            </div>
+    </div>
+
+    <div class="container">
+        <div class="firstside">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <div class="explore">Explore</div>
+            <div class="features">Website Hosting <br>Features</div>
+            <p>All we do - our technology, our security,our people - is designed to keep you online when everything
+                is on the line. We're more than just hosting. And we won't let you down.
+            </p>
+            <h4><a href="">Discover more</a></h4>
+         
+
+
+
+        </div>
+
+        <div class="secondside">
+
+
+            <div id="firstrow">
+                <img src="guarantee.jpeg" alt=""> 
+                <img src="storage.png" alt="">
+                 
+           <div class="guarantee"> 99.9% Uptime <br>Guarantee</div>
+          <p>The best ability is avail- <br>ability -- so we make sure <br> your site stays up.</p>
+            
+          <!-- <img src="infinity.png" alt=""> -->
+          <div class="unmeter">
+            Unmetered <br> Bandwidth</div>
+          <section>Bring in all the trafic your <br> little heart desires, We can <br> handle it. </section>
+            </div>
+
+            <div id="secondrow">
+                <img src="infinity.png" alt="">
+                <img src="click.png" alt="">
+                <div class="storage">SSD Storage <br> Arrays</div>
+                <p>Solid state RAID-10 storage <br> arrays for fast page loads <br>and maximum redundan.cy</p>
+
+
+                <!-- <img src="click.png" alt=""> -->
+                <div class="install">
+                    One-Click <br> Installs</div>
+                <section>This one-click software <br> installer features version <br> control, installations. </section>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="timersection">
+        <div class="signup">Sign up for web <br> hosting today! </div>
+        <div class="sale">Season end sale <b>Get an SSL certificate for free </b></div>
+        <p id="demo"></p>
+        <div class="days">Days</div>
+        <div class="hours">Hours</div>
+        <div class="mints">Minutes</div>
+        <div class="sec">Seconds</div>
+        <div class="saleprice">
+            $2.69
+        </div>
+        <div class="valid">/mo*</div>
+        <button>Sign up today</button>
+    </div>
+
+
+     <h1 class="pricing">
+        Simple, transparent pricing
+     </h1>
+     <span class="plans">compare all plans > </span>
+
+    <div class="gridcontainer">
+        <div class="item1">
+           <h2> Value <br>Server </h2>
+           <div class="off">Now 52% off!</div>
+           <div id="price">$20.59</div>
+           <div class="yearly">Per Year</div>
+           <hr style="text-align: center; width: 80%;"> <br>
+           <div class="allfeatures">Show all features <i class="fa fa-angle-down" ></i></div> 
+           <div class="selection"> <a href="">Select Plan </a></div>
+        
+           
+        </div>
+        
+        <div class="item2">
+            <h2>Power <br>Server </h2>
+            <div class="off">Now 52% off!</div>
+            <div id="price">$35.02</div>
+            <div class="yearly">Per Year</div>
+            <hr style="text-align: center; width: 80%;"> <br>
+              <div class="allfeatures">Show all features <i class="fa fa-angle-down" ></i></div> 
+              <div class="selection"> <a href="">Select Plan </a></div>
+            
+        </div>
+
+        <div class="item3">
+            <h2>Enterprise <br> Server</h2>
+            <div class="off">Now 52% off!</div>
+            <div id="price">$50.79</div>
+            <div class="yearly">Per Year</div>
+            <hr style="text-align: center; width: 80%;"> <br>
+            <div class="allfeatures">Show all features <i class="fa fa-angle-down" ></i></div> 
+            <!-- <div class="allfeatures"><a href="">Show all features <i class="fa fa-angle-down" ></i></a> -->
+                <!-- <ul class="submenu">
+                    <li><a href="">3efr</a></li>
+                    <li><a href="">rfkl4rmfkltvf4f</a></li>
+                    <li><a href="">5f4tf2</a></li>
+                    <li><a href="">d3r2g</a></li>
+                    <li><a href="">34f43gt</a></li>
+                </ul> -->
+             <!-- </div> -->
+             <div class="selection"> <a href="">Select Plan </a></div>
+             <br>&nbsp;
+             <br>&nbsp;
+             <br>&nbsp;
+        </div>
+
+         </div>
+
+
+         <div class="clients">Our clients</div>
+          <div class="qualityclients">We've worked with big and small alike </div>
+
+
+          <div class="reviews">
+
+          <div class="firstreview">
+            <img src="durani logo.jpeg" alt="">
+          <div class="name">Durani Farms</div>
+          <div class="profession">CEO </div>
+          <p>I have been a client of Gexton for many years. Gexton host provides me the best 
+          web hosting service with SSL certificate.</p>
+          </div>
+
+          
+          <div class="secondreview">
+          <div class="name">BBSYD Hi-tech pipe</div>
+          <img src="BBSD logo.jpeg" alt="">
+          <div class="profession">MIS Department CEO</div>
+          <p>I have been a client of Gexton for many years. Gexton host provides me the best 
+          web hosting service with SSL certificate.</p>
+          </div> 
+          </div>
+
+          <div class="needhelp"> Need help? Call our Support team at +92 301 8222 720</div>
+
+
+          <div class="contactdetails">
+          <div class="column1"> 
+          <h2>Company</h2>
+          <ul class="footer">
+          <li><a href="">About us</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Contact us</a></li>
+          </ul>
+          </div>
+
+          <div class="column2">
+          <h2>Hosting</h2>
+          <ul class="footer">
+          <li><a href="">Web hosting</a></li>
+          <li><a href="">WordPress hosting</a></li>
+          <li><a href="">Shared Hosting</a></li>
+          <li><a href="">Woocommerce Hosting</a></li>
+          <li><a href="">VPS hosting</a></li>
+          <li><a href="">Website builder</a></li>
+          </ul>
+          </div>
+
+          <div class="column3">
+          <h2>Domains</h2>
+          <ul class="footer">
+          <li><a href="">Register domains</a></li>
+          <li><a href="">Transfer domains</a></li>
+          <li><a href="">Manage domains</a></li>
+          </ul>
+          </div>
+
+          <div class="column4">
+          <h2>Services</h2>
+          <ul class="footer">
+          <li><a href="">Webdesign</a></li>
+          <li><a href="">PPC</a></li>
+          <li><a href="">SEO</a></li>
+          </ul>
+          </div>
+
+          <div class="column5">
+          <h2>Support</h2>
+          <ul class="footer">
+          <li><a href="">Customer Portal</a></li>
+          <li><a href="">Help Support</a></li>
+          </ul>
+          </div>
+          
+          <div class="footerimage">
+              <img src="gexhost logo.png" alt="">
+            </div>
+
+            <div class="rights">
+               &copy; 2021 GextHost - All Rights Reserved
+            </div>
+
+            <div class="icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                 <a href="#" class="fa fa-twitter"></a>
+                 <a href="#" class="fa fa-whatsapp"></a>
+                 <a href="#" class="usd">USD <i class="fa fa-angle-down" id="dropdown" ></i> </a>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("october 30, 2024 15:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d "  + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script> 
+</body>
+</html>
